@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Colors */
+:root {
+
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+
+
+body {
+    font-size: 18px;
+    background-color: rgb(250, 250, 250);
+    font-family: "Poppins", sans-serif;
+}
+
+main section .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .box .items {
+    margin: 50px auto;
+    max-width: 1000px;
+    width: 90%;
+    min-height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+main section .box .items .item-1 {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: var(--Purple-500);
+    color: var(--White);
+    padding: 15px;
+    text-align: center;
+    height: 15rem;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main section .box .items .item-1 img {
+    width: 10rem;
+}
+
+main section .box .items .item-1 h1 {
+    padding: 30px 15px;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 0.9;
+}
+
+main section .box .items .item-1 span {
+    font-weight: 500;
+    color: var(--Yellow-500);
+}
+
+main section .box .items .item-1 p {
+    font-weight: 200;
+    color: var(--Purple-100);
+}
+
+main section .box .items .item-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: var(--White);
+    color: var(--Black);
+    padding: 20px;
+    height: 12rem;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section .box .items .item-2 img {
+    width: 18rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+main section .box .items .item-2 h3 {
+    margin: 15px 10px 0 0;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: start;
+}
+
+main section .box .items .item-3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: var(--Yellow-500);
+    color: var(--Black);
+    padding: 20px;
+    height: 12rem;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+main section .box .items .item-3 img {
+    margin-top: 35px;
+    width: 11rem;
+}
+
+main section .box .items .item-3 h3 {
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: start;
+}
+
+main section .box .items .item-4 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: var(--Purple-100);
+    color: var(--Black);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+main section .box .items .item-4 img {
+    margin-top: 15px;
+    width: 22rem;
+}
+
+main section .box .items .item-4 h4 {
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: start;
+    padding: 10px;
+}
+
+main section .box .items .item-4 p {
+    font-weight: 400;
+    padding: 5px 25px 15px 0;
+    font-size: 14px;
+    color: var(--Black);
+}
+
+main section .box .items .item-5 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    display: flex;
+    background-color: var(--Purple-500);
+    color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 13.3rem;
+}
+
+main section .box .items .item-5 img {
+    margin: 10px 5 10px 10px;
+    width: 12rem;
+    height: 13rem;
+}
+
+main section .box .items .item-5 h2 {
+    line-height: 1;
+    font-weight: 300;
+    font-size: 32px;
+    text-align: start;
+    padding: 60px 0;
+}
+
+main section .box .items .item-6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: var(--White);
+    color: var(--Black);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    height: 15rem;
+}
+
+main section .box .items .item-6 img {
+    margin: 10px 5 10px 10px;
+    width: 10rem;
+}
+
+main section .box .items .item-6 h1 {
+    font-weight: 500;
+    font-size: 50px;
+    text-align: start;
+    padding: 0 0;
+}
+
+main section .box .items .item-6 p {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+main section .box .items .item-7 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: var(--Yellow-100);
+    color: var(--Black);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 64%;
+}
+
+main section .box .items .item-7 img {
+    margin: 20px 0;
+    width: 10rem;
+}
+
+main section .box .items .item-7 h2 {
+    margin-top: 30px;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: start;
+}
+
+main section .box .items .item-7 h2 span {
+    color: var(--Purple-500);
+}
+
+main section .box .items .item-8 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+    background-color: var(--Yellow-500);
+    color: var(--Black);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: -8rem;
+    height: 60%;
+}
+
+main section .box .items .item-8 img {
+    margin: 50px 5 10px 10px;
+    width: 12rem;
+}
+
+main section .box .items .item-8 h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    text-align: start;
+    margin: 10px 0 50px 10px;
+}
+
+main section .box .items .item-2,
+main section .box .items .item-3,
+main section .box .items .item-4,
+main section .box .items .item-6,
+main section .box .items .item-7,
+main section .box .items .item-8 {
+    width: 12rem;
+}
